@@ -1,22 +1,20 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ScrollView,TextInput } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
+
+import { StyleSheet, Text, View, ScrollView, TextInput } from "react-native";
+import Login from "./src/components/Login/Login";
+import { useFonts } from "expo-font";
+import AppLoading from "expo-app-loading";
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Welcome to the ASAP Delivery</Text>
-      <Text>Sign in</Text>
-      <View>
-        <Text style={styles.phoneLabel}>phone number:</Text>
-        <TextInput
-          style={styles.input}
-          placeholder="e.g:+250785679625"
-          keyboardType="numeric"
-        />
-      </View>
-    </View>
-  );
+   const [fontsLoaded] = useFonts({
+     "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
+     "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
+   });
+if (!fontsLoaded) {
+  return <AppLoading />;
+} else {
+  return <Login />;
+}
 }
 const styles = StyleSheet.create({
   container: {
@@ -25,13 +23,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
-  },
-  phoneLabel: {
-    
-  }
+
 });
