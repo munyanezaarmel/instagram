@@ -6,7 +6,7 @@
 - download expo Go app in playstore or app store
 - click the link on top of this repo and then scan code using expo Go 
 
-### OR 
+### test it in development mode
 - clone this repo 
 - cd into it then run npm i 
 - npm start 
