@@ -7,6 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as React from "react";
 import HomeScreen from "./screens/HomeScreen";
+import BottomTabs from "./src/components/BottomTabs/BottomTabs";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -25,7 +26,9 @@ export default function App() {
               headerShown: false,
             }}
           />
+
         </Stack.Navigator>
+     
       </NavigationContainer>
     );
   }
@@ -33,7 +36,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
   },

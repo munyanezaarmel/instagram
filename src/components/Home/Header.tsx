@@ -2,6 +2,7 @@ import { View, Text,Image } from 'react-native'
 import React from 'react'
 import styles from "./home.styles";
 import Icon from "react-native-vector-icons/Feather";
+import IconMaterial from "react-native-vector-icons/MaterialCommunityIcons";
 export default function Home() {
   return (
     <View style={styles.container}>
@@ -21,7 +22,10 @@ export default function Home() {
             style={styles.plus}
           />
           <Icon name="heart" size={30} color="black" style={styles.heart} />
-          <Icon name="send" size={30} color="black" />
+          <View style={styles.messages}>
+            <Text style={styles.badgeText} >11</Text>
+          </View>
+          <Icon name="send" size={30} color="black" style={styles.heart} />
         </View>
       </View>
     </View>
