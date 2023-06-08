@@ -1,7 +1,7 @@
 ### Mobile Instagram App 
 <img src="/assets/images/Home%20Screen.png" alt="Home Screen" width="300">
-### How to run this App:
-### BY using EXPO GO app in playstore
+## How to run this App:
+## BY using EXPO GO app in playstore
 -download expo Go app in playstore or app store
 -click the link on top of this repo and then scan code using expo Go 
 
