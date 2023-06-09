@@ -1,7 +1,7 @@
 ### Mobile Instagram App 
 <div style="display: flex; flex-wrap: wrap;">
 <img src="/assets/images/HomeScreen.png" alt="Home Screen" width="300">
-<img src="/assets/images/Login.png" alt="Login" width="300">
+<img src="/assets/images/Login.png" alt="Login" width="300" style="margin-right: 20px;">
 <img src="/assets/images/sign.png" alt="Sign UP" width="300">
 </div>
 
