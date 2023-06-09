@@ -20,28 +20,7 @@ export default function App() {
 
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="CreatePosts">
-          <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-           options={{
-              headerShown: false,
-            }}
-          />
-          <Stack.Screen
-            name="Login"
-            component={Login}
-           options={{
-              headerShown: false,
-            }}
-          />
-          <Stack.Screen
-            name="SignUp"
-            component={SignUp}
-           options={{
-              headerShown: false,
-            }}
-          />
+        <Stack.Navigator initialRouteName="SignUp">
           <Stack.Screen
             name="Create Posts"
             component={CreatePosts}
@@ -49,9 +28,28 @@ export default function App() {
               headerShown: false,
             }}
           />
-
+          <Stack.Screen
+            name="Home"
+            component={HomeScreen}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="Login"
+            component={Login}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="SignUp"
+            component={SignUp}
+            options={{
+              headerShown: false,
+            }}
+          />
         </Stack.Navigator>
-     
       </NavigationContainer>
     );
   }
