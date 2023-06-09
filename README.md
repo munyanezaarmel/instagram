@@ -18,7 +18,7 @@
 - presss w in terminal to open in web using webpack
 
 ## Technologies used
-- React Nativ
+- React Native
 - Expo
 - Redux
 - Fomik
