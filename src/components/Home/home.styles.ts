@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   comments: {},
   postsIcon: {
     alignSelf: "flex-end",
-    marginLeft: 250,
+    marginLeft: 230,
   },
   profileName: {
     paddingLeft: 10,
