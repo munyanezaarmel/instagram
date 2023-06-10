@@ -19,7 +19,9 @@ const Posts = () => {
     <View>
       <View style={styles.PostsProfile}>
         <Image
-          source={require("../../../assets/images/user-5.jpeg")}
+          source={{
+            uri: "https://images.pexels.com/photos/4255392/pexels-photo-4255392.jpeg?auto=compress&cs=tinysrgb&w=600",
+          }}
           style={styles.postsImage}
         />
         <Text style={styles.profileName}>munyarmel</Text>
@@ -32,7 +34,9 @@ const Posts = () => {
       </View>
 
       <Image
-        source={require("../../../assets/images/user-5.jpeg")}
+        source={{
+          uri: "https://images.pexels.com/photos/2385041/pexels-photo-2385041.jpeg?auto=compress&cs=tinysrgb&w=600",
+        }}
         style={styles.post}
       />
       <View>

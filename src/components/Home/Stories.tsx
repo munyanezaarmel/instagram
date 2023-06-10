@@ -1,7 +1,7 @@
-import { View, Text,Image,ScrollView } from 'react-native'
+import { View, Text, Image, ScrollView } from "react-native";
 import styles from "./home.styles";
-import React from 'react'
-import data from '../../../data/data';
+import React from "react";
+import data from "../../../data/data";
 
 const Stories = () => {
   return (
@@ -15,14 +15,14 @@ const Stories = () => {
           <View
             style={{
               borderBottomColor: "grey",
-              marginTop:20,
-              borderBottomWidth:1,
+              marginTop: 20,
+              borderBottomWidth: 1,
             }}
           />
         </ScrollView>
       ))}
     </View>
   );
-}
+};
 
-export default Stories
+export default Stories;

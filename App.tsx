@@ -17,10 +17,9 @@ export default function App() {
     "Inter-Regular": require("./assets/fonts/Inter-Regular.ttf"),
     "Inter-Bold": require("./assets/fonts/Inter-Bold.ttf"),
   });
-
     return (
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="SignUp">
+        <Stack.Navigator initialRouteName="Login">
           <Stack.Screen
             name="Create Posts"
             component={CreatePosts}
@@ -28,13 +27,7 @@ export default function App() {
               headerShown: false,
             }}
           />
-          <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              headerShown: false,
-            }}
-          />
+
           <Stack.Screen
             name="Login"
             component={Login}
@@ -45,6 +38,13 @@ export default function App() {
           <Stack.Screen
             name="SignUp"
             component={SignUp}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="Home"
+            component={HomeScreen}
             options={{
               headerShown: false,
             }}

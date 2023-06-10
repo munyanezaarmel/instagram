@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./home.styles";
 import Icon from "react-native-vector-icons/Feather";
 import IconMaterial from "react-native-vector-icons/MaterialCommunityIcons";
-export default function Home() {
+export default function Header() {
   return (
     <View style={styles.container}>
       <View style={styles.headerIconsWrapper}>

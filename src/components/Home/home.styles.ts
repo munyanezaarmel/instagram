@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from "react-native";
 const styles = StyleSheet.create({
   container: {
-    marginTop: -30,
+    // marginTop: -30,
   },
 
   imageIcon: {
@@ -11,22 +11,22 @@ const styles = StyleSheet.create({
     marginHorizontal: 50,
   },
   storiesImage: {
-    width: 80,
-    height: 80,
+    width: 60,
+    height: 60,
     borderRadius: 50,
-    borderColor: "blue",
+    borderColor: "orange",
     borderWidth: 3,
   },
   postsImage: {
     width: 40,
     height: 40,
     borderRadius: 50,
-    borderColor: "blue",
+    borderColor: "orange",
     borderWidth: 3,
     padding: 20,
   },
   imageBottom: {
-     width: 40,
+    width: 40,
     height: 40,
     borderRadius: 50,
     // borderColor: "blue",
@@ -77,24 +77,27 @@ const styles = StyleSheet.create({
   heart: {
     marginRight: 20,
   },
-  messages:{
+  messages: {
     backgroundColor: "red",
     borderRadius: 25,
     position: "absolute",
-    right:10,
+    right: 10,
     alignItems: "center",
     justifyContent: "center",
     width: 20,
-    zIndex:100
+    zIndex: 100,
   },
   badgeText: {
-     color: "white",
+    color: "white",
     fontWeight: "600",
   },
   storiesContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: -20,
+  },
+  view: {
+    // flexDirection:"row"
   },
 });
 

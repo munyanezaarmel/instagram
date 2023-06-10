@@ -13,7 +13,9 @@ const Tab = createBottomTabNavigator();
 
 const ProfileIcon = () => (
   <Image
-    source={require("../../../assets/images/user-5.jpeg")}
+    source={{
+      uri: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
+    }}
     style={styles.imageBottom}
   />
 );
@@ -39,11 +41,12 @@ export default function BottomTabs() {
 
           return iconComponent;
         },
+        tabBarActiveTintColor: "blue",
+        tabBarInactiveTintColor: "gray",
+        tabBarStyle: {
+          display: "flex",
+        },
       })}
-      tabBarOptions={{
-        activeTintColor: "blue",
-        inactiveTintColor: "gray",
-      }}
     >
       <Tab.Screen name="home" component={Home} />
       <Tab.Screen name="search" component={Search} />
