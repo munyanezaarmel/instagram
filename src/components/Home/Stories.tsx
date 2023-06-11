@@ -7,8 +7,8 @@ const Stories = () => {
   return (
     <View style={styles.storiesContainer}>
       {data.map((item, index) => (
-        <ScrollView>
-          <View key={index}>
+        <ScrollView key={index}>
+          <View>
             <Image source={{ uri: item.url }} style={styles.storiesImage} />
             <Text>{item.name}</Text>
           </View>

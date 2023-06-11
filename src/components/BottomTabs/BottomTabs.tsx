@@ -29,13 +29,13 @@ export default function BottomTabs() {
 
           if (route.name === "Profile") {
             iconComponent = <ProfileIcon />;
-          } else if (route.name === "search") {
+          } else if (route.name === "Search") {
             iconComponent = <Icon name="magnify" size={size} color={color} />;
           } else if (route.name === "Feeds") {
             iconComponent = <Icon name="newspaper" size={size} color={color} />;
-          } else if (route.name === "stream") {
+          } else if (route.name === "Stream") {
             iconComponent = <Icon name="video" size={size} color={color} />;
-          } else if (route.name === "home") {
+          } else if (route.name === "Home") {
             iconComponent = <Icon name="home" size={size} color={color} />;
           }
 
@@ -48,9 +48,9 @@ export default function BottomTabs() {
         },
       })}
     >
-      <Tab.Screen name="home" component={Home} />
-      <Tab.Screen name="search" component={Search} />
-      <Tab.Screen name="stream" component={Stream} />
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Search" component={Search} />
+      <Tab.Screen name="Stream" component={Stream} />
       <Tab.Screen name="Feeds" component={Feeds} />
       <Tab.Screen name="Profile" component={Profile} />
     </Tab.Navigator>

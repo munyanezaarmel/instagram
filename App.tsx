@@ -49,6 +49,13 @@ export default function App() {
               headerShown: false,
             }}
           />
+          <Stack.Screen
+            name="BottomTabs"
+            component={BottomTabs}
+            options={{
+              headerShown: false,
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     );
